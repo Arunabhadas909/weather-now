@@ -1,0 +1,275 @@
+
+.app-bg {
+
+  object-fit: cover;
+  filter: blur(5px);
+}
+
+
+.font-bold
+{
+  font-weight: bold;
+}
+
+
+
+.text-shadow{
+color: aqua;
+  text-shadow: -2px 2px 4px rgba(0,0,0,0.5), 2px -2px 0 rgba(255,255,255,0.9);
+  font-size: 1.6rem;
+}
+
+.hideScrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.hideScrollbar::-webkit-scrollbar { 
+  display: none;  
+}
+
+
+.closeButton
+{
+    font-size: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.closeButton:hover
+{
+    color : gray;
+}
+
+
+
+#locationInput {
+
+  border-radius: 20px;
+  border-style: double;
+  border-color: grey;
+
+}
+
+#locationInput:focus {
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+
+
+.inputSearchButton {
+
+  width: 50% ;
+  border-radius: 20px;
+  border-style: double;
+  border-color: grey;
+  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
+
+
+}
+
+
+.inputSearchButton:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+
+#display-weather-card {
+
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 1rem;
+
+
+}
+
+
+#left-side,
+#right-side {
+
+  background: rgba(255,255,255,0.6);
+  border-style: double;
+  border-color: black;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  display: flex;
+
+}
+
+
+#left-side {
+
+  border-radius: 0 20px 20px 0;
+}
+
+
+#right-side {
+
+
+  border-radius: 20px 0 0 20px;
+
+}
+
+
+
+
+
+.forecast-tile-header
+{
+
+  border: double black;
+   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+   background:  rgba(255, 235, 205, 0.5);
+   align-items: stretch;
+
+
+}
+
+
+.add-borders
+{
+
+  border:  double black;
+  
+}
+
+
+.forecast-tile {
+  background:  rgba(255, 235, 205, 0.5);
+  border-style: double;
+  border-color: black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.6rem;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+
+.forecast-tile-2 {
+  background:  rgba(255, 235, 205, 0.5);
+  border-style: double;
+  border-color: black;
+
+  text-align: center;
+  padding: 0.6rem;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+.adjustHeight{
+
+  max-height: 75vh;
+
+}
+
+
+
+
+.leftButton{
+
+
+  background: rgba(255,255,255,0.6);
+  border-style: double;
+  border-color: black;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  border-radius:0 10px 10px 0;
+  width: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.rightButton{
+
+
+  background: rgba(255,255,255,0.6);
+  border-style: double;
+  border-color: black;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  border-radius:10px 0 0 10px;
+  width: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+
+.overlay-panel {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 2000; 
+  padding: 1rem;
+}
+
+
+.overlay-panel-right {
+  left: 0;
+  justify-content: flex-end; 
+}
+
+.overlay-panel-left {
+  left: 0;
+  justify-content: flex-start; 
+}
+
+
+.leftPanelSmall{
+
+
+  z-index: 3;
+}
+
+.smallScrollable
+{
+  max-width: 100px ;
+
+  white-space: nowrap;
+}
+
+
+.minSearchBarWidth
+{
+
+  min-width: 200px;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  #locationInput {
+    width: 60%;
+  }
+
+
+  
+
+}
