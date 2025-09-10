@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect, useState } from 'react';
 import SearchBar from './components/searchBar';
 import LeftPanel from './components/leftPanel';
@@ -15,7 +12,7 @@ import RightPanelSmall from './components/rightPanelSmall';
 
 
 import useMediaQuery from './components/mediaScreenCheck';
-import { resolve } from 'chart.js/helpers';
+
 import { useRef } from 'react';
 
 import LoadingSpinner from './components/loadingSpinner';
