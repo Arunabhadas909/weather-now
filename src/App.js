@@ -3,7 +3,7 @@ import SearchBar from './components/searchBar';
 import LeftPanel from './components/leftPanel';
 import RightPanel from './components/rightPanel';
 import DisplayWeather from './components/displayWeather';
-import { fetchCurrent, fetchForecast } from './services/weatherappApi';
+
 import { weatherCodeMap } from './weatherCodeMap';
 import { resolveCoords } from './services/weatherappApi';
 import { fetchWeather } from './services/weatherappApi';
@@ -21,7 +21,7 @@ export default function App() {
   const [query, setQuery] = useState('');
   const [locationName, setLocationName] = useState('Location');
   const [currentData, setCurrentData] = useState(null);
-  const [forecastData, setForecastData] = useState(null);
+
   const [forecastList, setForecastList] = useState([]);
   const [forecastShort, setForecastShort] = useState([]);
    const [renderLeft, setRenderLeft] = useState(false);
