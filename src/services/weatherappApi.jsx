@@ -4,7 +4,7 @@
 const URL_GEOCODE = "https://geocoding-api.open-meteo.com/v1/search";
 const URL_FORECAST = "https://api.open-meteo.com/v1/forecast";
 
-const URL_BACKEND = "http://localhost:4000"; 
+const URL_BACKEND = "https://weather-now-backend-egmo.onrender.com"; 
 
 export async function resolveCoords(cityOrCoords) {
   if (typeof cityOrCoords === "string") {
