@@ -11,7 +11,7 @@ export default function DisplayWeather({ current, forecastList }) {
  
             
             
-            <h1 id="temperature" className="align-center"><i className={`bi ${current? (current.temp>=30? "bi-fire" : current.temp<=15? "bi-snow": "bi-thermometer-half"):""}`}></i>{current ? `${Math.round(current.temp)}&deg;C` : '&deg;C'}</h1>
+            <h1 id="temperature" className="align-center"><i className={`bi ${current? (current.temp>=30? "bi-fire" : current.temp<=15? "bi-snow": "bi-thermometer-half"):""}`}></i>{current ? `${Math.round(current.temp)}` : ''}&deg;C</h1>
        
      
             
